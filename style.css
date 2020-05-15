@@ -138,7 +138,7 @@ a{
 	background-image: url('room3.webp');
 }
 .description{
-	height: 25vh;
+	min-height: 25vh;
 }
 .description h4{
 	color: #c21e6a;

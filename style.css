@@ -210,7 +210,7 @@ a{
 .facilities-icons div.active{
 	border-bottom: 1px solid #c21e6a;
 	transition: 0.2s;
-	transition-timing-function: ease-in;
+	transition-timing-function: ease-out;
 	/* padding: 1.426vw 3vw 1.43vw 3vw; */
 }
 .facilities-icons div:hover h5,.facilities-icons div.active h5{
@@ -218,33 +218,54 @@ a{
 	transition: 0.2s;
 }
 .facilities-description{
-	padding: 2vw;
+	padding: 0.5vw;
 	border: 0.5px solid #aaa;
-	min-height: 100px;
-	margin-top:8.33%;
+	min-height: 55vh;
+	margin-top:1%;
 	margin-left:8.33%;
 	border-radius: 4px;
 	margin-bottom: 3vh;
+	display: none;
+	background-color: #fff;
 }
 .facilities-description .facilities-image{
-	/* border:1px solid white; */
+	border:0.5px solid #aaa;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 30vh;
+	min-height: 52vh;
 }
 .facilities-description .text{
 	padding: 2vh;
 	/* border:1px solid white; */
 	min-height: 30vh;
-	font-size: large;
-	color:white
+	font-size: 20px;
+	/* color:white */
 }
 .facilities-description h5{
 	color:#c21e6a;
 }
-.facilities-description .facilities-image:nth-child(1){
-	background-image: url('food.jpeg');
+.facilities-description#resturant{
+	display: block;
+}
+#resturant .facilities-image{
+	background-image: url('food.jpg');
+	
+}
+#gym .facilities-image{
+	background-image: url('gym.jpg');
+}
+#swimming .facilities-image{
+	background-image: url('pool.jpg');
+}
+#ac .facilities-image{
+	background-image: url('ac.jpeg');
+}
+#wifi .facilities-image{
+	background-image: url('wifi.jpg');
+}
+#game-center .facilities-image{
+	background-image: url('game.jpg');
 }
 
 
@@ -288,6 +309,11 @@ a{
 	}
 	.facilities-description{
 		margin-left:4.165%;
+		min-height: 100px;
+		padding: 2vw;
+	}
+	.facilities-description .facilities-image{
+		min-height: 30vh;
 	}
 
 }

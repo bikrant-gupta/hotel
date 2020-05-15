@@ -192,15 +192,18 @@ a{
 }
 
 .facilties-icons div{
-	padding: 3vw;
+	padding: 0px 3vw 0px 3vw;
 	text-align: center;
 }
-.facilties-icons div:hover i{
+.facilties-icons div:hover i,.facilties-icons div.active i{
 	color:#c21e6a;
 	font-size: 4vw;
 	transition: 0.2s;
 }
-.facilties-icons div:hover h5{
+.facilties-icons div.active{
+	border-bottom: 1px solid #c21e6a;
+}
+.facilties-icons div:hover h5,.facilties-icons div.active h5{
 	color:#c21e6a;
 	/* font-size: 4vw; */
 	transition: 0.2s;

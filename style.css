@@ -176,17 +176,22 @@ a{
 	background-color:#000034;
 }
 .facilties-icons{
-	padding: 10vw;
+	padding: 0px 10vw 0px 10vw;
 }
 .facilties-icons i{
 	color:white;
-	/* height: 16.67vw; */
 	font-size: 5vw;
 	text-align: center;
 }
+
 .facilties-icons div{
 	padding: 3vw;
 	text-align: center;
+}
+.facilties-icons div:hover i{
+	color:#c21e6a;
+	font-size: 4vw;
+	transition: 0.2s;
 }
 
 

@@ -9,7 +9,16 @@ $(document).ready(()=>{
         setTimeout(()=>{
             $(`#${id}`).fadeIn({duration:fade});
         },fade)
-        
+    })
+    $('.login').click(()=>{
+        $('.popup-close-btn,.login-signup').show();
+    })
+    var width = $(window).width();
+    var height = $(window).height();
+    console.log(width,height)
+    // $('.login-form').html(`${width}+${height}`)
+    $('.popup-close-btn').click(()=>{
+        $('.popup-close-btn,.login-signup').hide();
     })
 	
 }) 

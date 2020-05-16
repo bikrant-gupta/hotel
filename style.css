@@ -93,6 +93,9 @@ a{
 	text-align: center;
 	font-size: 1.5rem;
 }
+.description .text{
+	font-style: oblique;
+}
 .services-head .text h1{
 	padding: 0px;
 	margin: 2vh;
@@ -244,8 +247,10 @@ a{
 	min-height: 40vh;
 	font-size: 20px;
 	color:white;
+	font-style: oblique;
 }
 .facilities-description h3{
+	font-style: normal;
 	color:#c21e6a;
 }
 .facilities-description#resturant{

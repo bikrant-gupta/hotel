@@ -402,6 +402,7 @@ a{
 .signup-form{
 	margin-top: 5vh;
 	padding: 1vh 5vw 1vh 5vw;
+	scroll-behavior: auto;
 }
 .login-box h2 ,.signup-box h2{
 	color:#c21e6a;
@@ -418,18 +419,14 @@ a{
 .input-form{
 	position: relative;
 }
-.login-form .input-form:nth-child(1){
-	margin-top: 10vh;
-}
-.signup-form .input-form:nth-child(1){
-	margin-top: 4vh;
+.login-form h3,.signup-form h3{
+	margin-bottom: 10vh;
 }
 
 .input-form input{
 	width:100%;
 	height: 40px;
 	padding: 0px 15px;
-	margin-bottom: 50px;
 	border:none;
 	outline: none;
 	border-bottom: 1px solid #c21e6a;
@@ -437,8 +434,15 @@ a{
 	/* font-family: cursive; */
 	font-style: oblique;
 }
-.signup-form .input-form:nth-child(5) input{
-	margin-bottom: 10px;
+.input-form div{
+	margin-bottom: 36px;
+	font-size: 14px;
+	padding-left: 10px;
+	color:#aa0000;
+	/* display: none; */
+}
+.input-form div::before{
+	content: "*";
 }
 .input-form label{
 	position: absolute;

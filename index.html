@@ -250,39 +250,35 @@
 			<h2>YOYO</h2>
 			<h3>Sign Up</h3>
 			<form action="index.html" autocomplete="off">
-				<div class="input-form">
+				<div class="input-form in-1">
 					<input type="text" name="name" required autocomplete="off" autofocus>
 					<label>Name</label>
+					<div class="input-error">Enter a Name</div>
 				</div>
-				<div class="input-form">
+				<div class="input-form in-1">
 					<input type="text" name="email" required autocomplete="off" value="">
 					<label>Email</label>
+					<div class="input-error">Enter a valid Email</div>
 				</div>
-				<div class="input-form">
+				<div class="input-form in-1">
 					<input type="number" name="phone" required autocomplete="off">
 					<label>Phone</label>
+					<div class="input-error">Enter a valid Phone Number</div>
 				</div>
-				<!-- <div class="input-form">
-					<input type="text" required autocomplete="off" autofocus>
-					<label>Permanent Address</label>
-				</div>
-				<div class="input-form">
-					<input type="text" required autocomplete="off" autofocus>
-					<label>City</label>
-				</div>
-				<div class="input-form">
-					<input type="text" required autocomplete="off" autofocus>
-					<label>Pincode</label>
-				</div> -->
-				<div class="input-form">
-					<input type="password" required>
+				
+				<div class="input-form in-2 d-n">
+					<input type="password" name="password" required>
 					<label>Password</label>
+					<div class="input-error">Enter a strong password(8-12 character)</div>
 				</div>
-				<div class="input-form">
-					<input type="password" required>
+				<div class="input-form in-2 d-n">
+					<input type="password" name="cpassword" required>
 					<label>Confirm Password</label>
+					<div class="input-error">Enter again same password</div>
 				</div>
-				<button class="btn col-4">SignUp</button>
+				<button class="btn col-4 signup-next-btn in-1" type="button">Next</button>
+				<button class="btn col-4 d-n in-2 d-n">SignUp</button>
+				<button class="btn col-4 signup-pre-btn in-2 d-n" type="button">Back</button>
 			</form>
 			<div class="agree">By signing up you agree to our Terms of Service and Privacy Policy</div>
 		</div>

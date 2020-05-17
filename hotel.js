@@ -24,5 +24,19 @@ $(document).ready(()=>{
     $('.popup-close-btn').click(()=>{
         $('.popup-close-btn,.login-box,.signup-box').fadeOut({duration:fade});
     })
+    $('.signup-next-btn').click(()=>{
+        $('.in-1').fadeOut({duration:fade});
+        setTimeout(()=>{
+            $('.in-2').fadeIn({duration:fade});
+        },fade)
+        
+    })
+    $('.signup-pre-btn').click(()=>{
+        $('.in-2').fadeOut({duration:fade});
+        setTimeout(()=>{
+            $('.in-1').fadeIn({duration:fade});
+        },fade)
+        
+    })
 	
 }) 
